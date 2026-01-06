@@ -245,6 +245,20 @@ body::before {
   opacity: 1;
   transform: none;
 }
+.badges {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.badges span {
+  font-size: 11px;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--accent);
+}
 
   </style>
 </head>
@@ -300,6 +314,11 @@ body::before {
     <!-- PRODUK 3 -->
     <div class="product fade">
       <img src="images/hydropack.jpeg" alt="MTRL Hydropack">
+      <div class="badges">
+  <span>600D</span>
+  <span>WATER RESIST</span>
+  <span>BAR-TACK</span>
+</div>
       <h3>MTRL Hydropack</h3>
       <p>Hydropack minimalis untuk trail run & aktivitas cepat.</p>
       <div class="price">Rp 125.000</div>
@@ -351,6 +370,7 @@ faders.forEach(f => obs.observe(f));
 
 </body>
 </html>
+
 
 
 
